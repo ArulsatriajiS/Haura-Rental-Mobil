@@ -172,6 +172,18 @@
       }
     }
 
+    @media (min-width: 640px) {
+      .service-track {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .service-track {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after {
@@ -192,8 +204,8 @@
       </a>
 
       <nav class="hidden items-center gap-8 md:flex" aria-label="Navigasi utama">
-        <a class="nav-link text-sm font-medium text-white/80 transition hover:text-white" href="#keunggulan">Keunggulan</a>
-        <a class="nav-link text-sm font-medium text-white/80 transition hover:text-white" href="#armada">Armada &amp; Tarif</a>
+        <a class="nav-link text-sm font-medium text-white/80 transition hover:text-white" href="#layanan">Layanan</a>
+        <a class="nav-link text-sm font-medium text-white/80 transition hover:text-white" href="#armada">Armada</a>
         <a class="nav-link text-sm font-medium text-white/80 transition hover:text-white" href="#ulasan">Ulasan</a>
       </nav>
 
@@ -211,8 +223,8 @@
     </div>
     <nav id="mobile-menu" class="nav-menu-panel absolute left-0 right-0 top-full hidden border-b border-slate-200/80 bg-white/95 p-4 text-slate-800 shadow-xl backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/95 dark:text-white md:hidden" aria-label="Navigasi mobile">
       <div class="mx-auto flex max-w-6xl flex-col gap-1">
-        <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-violet-50 dark:hover:bg-white/5" href="#keunggulan">Keunggulan</a>
-        <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-violet-50 dark:hover:bg-white/5" href="#armada">Armada &amp; Tarif</a>
+        <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-violet-50 dark:hover:bg-white/5" href="#layanan">Layanan</a>
+        <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-violet-50 dark:hover:bg-white/5" href="#armada">Armada</a>
         <a class="rounded-xl px-4 py-3 text-sm font-semibold hover:bg-violet-50 dark:hover:bg-white/5" href="#ulasan">Ulasan</a>
         <a data-wa="Halo Haura Rental, saya ingin bertanya dan booking mobil di Bandung." href="#" class="mt-2 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 py-3 text-sm font-bold text-white">Sewa Mobil <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
       </div>
@@ -227,19 +239,15 @@
 
       <div class="mx-auto grid w-full max-w-6xl items-center gap-10 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:gap-14 lg:py-24">
         <div class="max-w-2xl">
-          <div class="reveal inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-3.5 py-2 text-xs font-semibold tracking-wide text-violet-100 sm:text-sm">
-            <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-sky-400"></span></span>
-            Siap 24 Jam <span class="text-white/40">•</span> Bandung, Lembang &amp; Ciwidey
-          </div>
-          <h1 class="reveal stagger-1 mt-6 max-w-xl font-display text-4xl font-extrabold leading-[1.1] tracking-[-.04em] sm:text-5xl lg:text-[3.55rem]">
+          <h1 class="reveal stagger-1 max-w-xl font-display text-4xl font-extrabold leading-[1.1] tracking-[-.04em] sm:text-5xl lg:text-[3.55rem]">
             Sewa Mobil Bandung Nyaman, Bersih &amp; Transparan.
           </h1>
           <p class="reveal stagger-2 mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
             Brio–Hiace, lepas kunci, city tour 12 jam, atau All-In bersama driver dan BBM.
           </p>
           <div class="reveal stagger-3 mt-8 flex flex-col gap-3 sm:flex-row">
-            <a data-wa="Halo Haura Rental, saya ingin booking mobil di Bandung. Mohon info ketersediaan unit dan tarif." href="#" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-violet-600 px-6 text-sm font-bold text-white shadow-xl shadow-violet-950/40 transition hover:-translate-y-0.5 hover:bg-violet-500">
-              <i data-lucide="message-circle" class="h-[18px] w-[18px]" aria-hidden="true"></i> Booking via WhatsApp
+            <a data-wa="Halo Haura Rental, saya ingin konsultasi kebutuhan armada untuk perjalanan saya." href="#" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-violet-600 px-6 text-sm font-bold text-white shadow-xl shadow-violet-950/40 transition hover:-translate-y-0.5 hover:bg-violet-500">
+              <i data-lucide="message-circle" class="h-[18px] w-[18px]" aria-hidden="true"></i> Konsultasi Kebutuhan Armada
             </a>
             <a href="#armada" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/25 bg-white/[0.06] px-6 text-sm font-semibold text-white transition hover:bg-white/10">
               Lihat Armada &amp; Tarif <i data-lucide="arrow-down" class="h-4 w-4" aria-hidden="true"></i>
@@ -254,7 +262,7 @@
         <div class="reveal stagger-2 relative mx-auto w-full max-w-[540px]">
           <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet-500/35 via-sky-500/10 to-transparent blur-xl"></div>
           <div class="relative overflow-hidden rounded-[1.6rem] border border-white/15 bg-white/10 p-2 shadow-2xl shadow-black/30">
-            <img src="./assets/777141857_18109943675322013_8661687952450891713_n.jpg" alt="Toyota Innova Zenix putih dengan latar Braga Bandung" class="hero-image aspect-[4/3] w-full rounded-[1.15rem] object-cover sm:aspect-[1.08/1]">
+            <img src="https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mobil MPV putih modern di jalan perkotaan" class="hero-image aspect-[4/3] w-full rounded-[1.15rem] object-cover sm:aspect-[1.08/1]">
             <div class="absolute inset-x-2 bottom-2 rounded-b-[1.1rem] bg-gradient-to-t from-[#130a24]/95 via-[#130a24]/65 to-transparent px-5 pb-5 pt-16 sm:px-6 sm:pb-6">
               <div class="flex items-end justify-between gap-4">
                 <div>
@@ -275,116 +283,138 @@
       </div>
     </section>
 
-    <section id="keunggulan" class="scroll-mt-24 bg-slate-50 py-16 dark:bg-[#0f0c1d] sm:py-20">
+    <section id="layanan" class="scroll-mt-24 bg-white py-16 dark:bg-slate-950 sm:py-20">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <div class="reveal mb-8 flex items-end justify-between gap-4 sm:mb-10">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Layanan Haura</p>
-            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Perjalanan lebih praktis</h2>
-          </div>
+        <div class="reveal mb-8 sm:mb-10">
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Layanan Sewa Mobil Kami</p>
+          <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Pilihan Layanan Sesuai Kebutuhan</h2>
         </div>
 
+        <div class="carousel-track service-track no-scrollbar flex flex-nowrap snap-x snap-mandatory gap-4 pb-2 -mx-4 px-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:mx-0 sm:px-0 lg:grid-cols-6 lg:gap-8" data-carousel="services" aria-label="Layanan sewa mobil Haura">
+          <article class="carousel-card service-card reveal stagger-1 group relative h-64 overflow-hidden rounded-2xl shadow-md sm:h-72 lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1788873481773-99d1c731857e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Hatchback putih untuk layanan lepas kunci" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15"></div>
+            <span class="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-violet-700 shadow-md"><i data-lucide="key-round" class="h-5 w-5" aria-hidden="true"></i></span>
+            <div class="absolute inset-x-5 bottom-5"><h3 class="font-display text-lg font-bold text-white sm:text-xl">Sewa Lepas Kunci</h3><p class="mt-1 text-xs text-slate-200 sm:text-sm">Kendali penuh berkendara sendiri keliling Bandung dengan unit bersih dan syarat mudah.</p></div>
+          </article>
+          <article class="carousel-card service-card reveal stagger-2 group relative h-64 overflow-hidden rounded-2xl shadow-md sm:h-72 lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mobil keluarga bersih untuk perjalanan bersama driver" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15"></div>
+            <span class="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-violet-700 shadow-md"><i data-lucide="user-check" class="h-5 w-5" aria-hidden="true"></i></span>
+            <div class="absolute inset-x-5 bottom-5"><h3 class="font-display text-lg font-bold text-white sm:text-xl">Sewa Mobil + Driver</h3><p class="mt-1 text-xs text-slate-200 sm:text-sm">Perjalanan santai tanpa lelah dengan pengemudi ramah yang hafal rute wisata Bandung.</p></div>
+          </article>
+          <article class="carousel-card service-card reveal stagger-3 group relative h-64 overflow-hidden rounded-2xl shadow-md sm:h-72 lg:col-span-2">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="SUV untuk perjalanan wisata Bandung" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15"></div>
+            <span class="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-violet-700 shadow-md"><i data-lucide="map-pin" class="h-5 w-5" aria-hidden="true"></i></span>
+            <div class="absolute inset-x-5 bottom-5"><h3 class="font-display text-lg font-bold text-white sm:text-xl">Paket Wisata All-In 12 Jam</h3><p class="mt-1 text-xs text-slate-200 sm:text-sm">Sudah termasuk mobil, driver, dan BBM untuk jelajah Lembang, Ciwidey, dan Pangalengan.</p></div>
+          </article>
+          <article class="carousel-card service-card reveal stagger-1 group relative h-64 overflow-hidden rounded-2xl shadow-md sm:h-72 lg:col-span-2 lg:col-start-2">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Kendaraan untuk antar jemput bandara dan stasiun" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15"></div>
+            <span class="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-violet-700 shadow-md"><i data-lucide="plane" class="h-5 w-5" aria-hidden="true"></i></span>
+            <div class="absolute inset-x-5 bottom-5"><h3 class="font-display text-lg font-bold text-white sm:text-xl">Antar Jemput Bandara &amp; Stasiun</h3><p class="mt-1 text-xs text-slate-200 sm:text-sm">Penjemputan tepat waktu dari Stasiun Bandung, Padalarang, maupun Bandara Kertajati.</p></div>
+          </article>
+          <article class="carousel-card service-card reveal stagger-2 group relative h-64 overflow-hidden rounded-2xl shadow-md sm:h-72 lg:col-span-2 lg:col-start-4">
+            <img src="https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Innova putih untuk kebutuhan korporat" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-slate-950/15"></div>
+            <span class="absolute left-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-violet-700 shadow-md"><i data-lucide="calendar-check" class="h-5 w-5" aria-hidden="true"></i></span>
+            <div class="absolute inset-x-5 bottom-5"><h3 class="font-display text-lg font-bold text-white sm:text-xl">Sewa Korporat &amp; Acara Khusus</h3><p class="mt-1 text-xs text-slate-200 sm:text-sm">Penyediaan unit operasional kantor, tamu VIP, hingga mobil pengantin terawat.</p></div>
+          </article>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots="services" aria-label="Pilih layanan"></div>
+      </div>
+    </section>
+
+    <section id="armada" class="scroll-mt-24 bg-slate-50 py-16 dark:bg-[#0f0c1d] sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal mb-7">
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Pilihan kendaraan</p>
+          <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Pilih Armadamu</h2>
+          <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-400">Pilihan unit bersih dan terawat dari city car hingga minibus — tersedia lepas kunci maupun dengan driver.</p>
+        </div>
+
+        <div class="mb-6 flex gap-2 overflow-x-auto pb-2 no-scrollbar" role="group" aria-label="Filter kategori armada">
+          <button type="button" class="fleet-filter shrink-0 rounded-full bg-violet-700 px-4 py-2.5 text-xs font-bold text-white" data-filter="all" aria-pressed="true">Semua Armada (6)</button>
+          <button type="button" class="fleet-filter shrink-0 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-600 transition hover:border-violet-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300" data-filter="city-car" aria-pressed="false">City Car (1)</button>
+          <button type="button" class="fleet-filter shrink-0 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-600 transition hover:border-violet-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300" data-filter="mpv" aria-pressed="false">MPV (3)</button>
+          <button type="button" class="fleet-filter shrink-0 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-600 transition hover:border-violet-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300" data-filter="suv" aria-pressed="false">SUV &amp; Premium (1)</button>
+          <button type="button" class="fleet-filter shrink-0 rounded-full border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-600 transition hover:border-violet-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300" data-filter="minibus" aria-pressed="false">Minibus (1)</button>
+        </div>
+
+        <div class="carousel-track no-scrollbar gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8" data-carousel="fleet" aria-label="Daftar armada dan tarif">
+          <article data-category="city-car" class="carousel-card reveal stagger-1 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1788873481773-99d1c731857e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Hatchback putih Honda Brio Satya" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Honda Brio Satya</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.8</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 350.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Bensin • Otomatis • 5 Kursi</p>
+            <a data-car="Honda Brio Satya" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+          <article data-category="mpv" class="carousel-card reveal stagger-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Avanza MPV keluarga" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Toyota Avanza</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.8</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 450.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Bensin • Otomatis • 7 Kursi</p>
+            <a data-car="Toyota Avanza" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+          <article data-category="mpv" class="carousel-card reveal stagger-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mitsubishi Xpander MPV" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Mitsubishi Xpander</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.9</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 550.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Bensin • Otomatis • 7 Kursi</p>
+            <a data-car="Mitsubishi Xpander" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+          <article data-category="mpv" class="carousel-card reveal stagger-1 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Innova Zenix putih" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Toyota Innova Zenix</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.9</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 850.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Bensin • Otomatis • 7 Kursi</p>
+            <a data-car="Toyota Innova Zenix" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+          <article data-category="suv" class="carousel-card reveal stagger-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Fortuner SUV" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Toyota Fortuner</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.9</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 1.300.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Diesel • Otomatis • 7 Kursi</p>
+            <a data-car="Toyota Fortuner" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+          <article data-category="minibus" class="carousel-card reveal stagger-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
+            <div class="mb-4 aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800"><img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Hiace Commuter minibus" class="h-full w-full object-cover transition duration-500 hover:scale-105" loading="lazy"></div>
+            <div class="flex items-center justify-between gap-2"><h3 class="font-display font-bold text-slate-900 dark:text-white">Toyota Hiace Commuter</h3><span class="shrink-0 text-sm font-bold text-amber-500">★ 4.8</span></div>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-xs text-slate-500 dark:text-slate-400">Lepas Kunci / All-In</span><span class="shrink-0 font-display font-bold text-violet-800 dark:text-violet-300">Rp 1.400.000</span></div>
+            <p class="mt-3 text-xs text-slate-600 dark:text-slate-400">Diesel • Manual • 14 Kursi</p>
+            <a data-car="Toyota Hiace Commuter" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-violet-700 py-2.5 text-sm font-semibold text-white transition hover:bg-violet-800">Book Sekarang</a>
+          </article>
+        </div>
+        <div class="carousel-dots sm:hidden" data-dots="fleet" aria-label="Pilih armada"></div>
+        <p class="mt-5 text-center text-xs leading-5 text-slate-500 dark:text-slate-400 sm:text-left">Harga mulai per hari. Konfirmasi durasi, ketersediaan, dan tarif All-In melalui WhatsApp.</p>
+      </div>
+    </section>
+
+    <section id="keunggulan" class="scroll-mt-24 bg-white py-16 dark:bg-slate-950 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal mb-8 sm:mb-10">
+          <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Layanan Haura</p>
+          <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Kenapa Memilih Haura Rental</h2>
+        </div>
         <div class="carousel-track no-scrollbar gap-4 sm:gap-6 lg:gap-8" data-carousel="benefits" aria-label="Keunggulan layanan">
-          <article class="carousel-card reveal stagger-1 rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+          <article class="carousel-card reveal stagger-1 rounded-2xl border border-slate-200/80 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
             <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-100 text-violet-700 dark:bg-violet-500/15 dark:text-violet-300"><i data-lucide="receipt-text" class="h-6 w-6" aria-hidden="true"></i></span>
-            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Paket All-In transparan</h3>
+            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Paket All-In Transparan</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">Mobil, driver, BBM, dan city tour 12 jam dalam satu paket.</p>
           </article>
-          <article class="carousel-card reveal stagger-2 rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+          <article class="carousel-card reveal stagger-2 rounded-2xl border border-slate-200/80 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
             <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-300"><i data-lucide="sparkles" class="h-6 w-6" aria-hidden="true"></i></span>
-            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Bersih dan terawat</h3>
+            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Unit Bersih &amp; Terawat</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">Armada rutin diservis, full AC dingin, dan siap digunakan.</p>
           </article>
-          <article class="carousel-card reveal stagger-3 rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
+          <article class="carousel-card reveal stagger-3 rounded-2xl border border-slate-200/80 bg-slate-50 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
             <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-300"><i data-lucide="map" class="h-6 w-6" aria-hidden="true"></i></span>
-            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Driver hafal rute</h3>
+            <h3 class="mt-5 font-display text-lg font-bold text-slate-900 dark:text-white">Driver Hafal Rute Wisata</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">Menuju Braga, Lembang, Ciwidey, hingga kawasan Pangalengan.</p>
           </article>
         </div>
         <div class="carousel-dots sm:hidden" data-dots="benefits" aria-label="Pilih keunggulan"></div>
-      </div>
-    </section>
-
-    <section id="armada" class="scroll-mt-24 bg-white py-16 dark:bg-slate-950 sm:py-20">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <div class="reveal mb-8 flex flex-col justify-between gap-4 sm:mb-10 sm:flex-row sm:items-end">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Pilihan kendaraan</p>
-            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Armada &amp; tarif</h2>
-          </div>
-          <p class="max-w-sm text-sm leading-6 text-slate-600 dark:text-slate-400">Tarif lepas kunci per hari. Paket All-In 12 jam tersedia dengan driver dan BBM.</p>
-        </div>
-
-        <div class="carousel-track no-scrollbar gap-4 sm:gap-6 lg:gap-8" data-carousel="fleet" aria-label="Daftar armada dan tarif">
-          <article class="carousel-card reveal stagger-1 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1788873481773-99d1c731857e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mobil hatchback putih untuk perjalanan dalam kota" class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Honda Brio Satya</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">4–5 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">City car lincah dan irit untuk mobilitas dalam kota.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 350.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Honda Brio Satya" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="carousel-card reveal stagger-2 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mobil MPV keluarga" class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Toyota Avanza</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">6–7 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">MPV keluarga nyaman untuk wisata harian maupun urusan bisnis.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 450.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Toyota Avanza" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="carousel-card reveal stagger-3 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Mobil keluarga untuk perjalanan wisata" class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Mitsubishi Xpander</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">6–7 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">Kabin senyap dan suspensi empuk untuk perjalanan luar kota.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 550.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Mitsubishi Xpander" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="carousel-card reveal stagger-1 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Toyota Innova putih modern" class="h-48 w-full object-cover object-center transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Toyota Innova Zenix</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">6–7 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">Ruang kaki lega untuk keluarga, tamu VIP, dan acara resmi.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 850.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Toyota Innova Zenix" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="carousel-card reveal stagger-2 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="SUV untuk perjalanan eksekutif dan wisata" class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Toyota Fortuner</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">6–7 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">SUV bertenaga untuk perjalanan dinas, wedding, dan tanjakan.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 1.300.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Toyota Fortuner" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-          <article class="carousel-card reveal stagger-3 group overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&amp;fit=crop&amp;w=960&amp;q=82" alt="Minibus untuk rombongan wisata" class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
-            <div class="p-5">
-              <div class="flex items-center justify-between gap-2"><h3 class="font-display text-lg font-bold text-slate-900 dark:text-white">Toyota Hiace Commuter</h3><span class="shrink-0 rounded-full bg-sky-100 px-2.5 py-1 text-[11px] font-bold text-sky-800 dark:bg-sky-400/10 dark:text-sky-300">14 Seat</span></div>
-              <p class="mt-2 min-h-10 text-sm leading-5 text-slate-600 dark:text-slate-400">Minibus untuk wisata keluarga, gathering kantor, dan study tour.</p>
-              <p class="mt-4 font-display text-lg font-extrabold text-violet-800 dark:text-violet-300">Rp 1.400.000 <span class="font-sans text-xs font-medium text-slate-500 dark:text-slate-400">/ hari</span></p>
-              <a data-car="Toyota Hiace Commuter" href="#" class="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-violet-700 px-4 text-sm font-bold text-white transition hover:bg-violet-600">Sewa Unit Ini <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-        </div>
-        <div class="carousel-dots sm:hidden" data-dots="fleet" aria-label="Pilih armada"></div>
-        <p class="mt-5 text-center text-xs leading-5 text-slate-500 dark:text-slate-400 sm:text-left">Tarif merupakan harga mulai. Konfirmasi ketersediaan, durasi, syarat lepas kunci, dan tarif All-In melalui WhatsApp.</p>
-
-        <div class="reveal mt-12 overflow-hidden rounded-3xl bg-[#201039] text-white shadow-xl shadow-violet-950/10 sm:mt-16">
-          <div class="grid items-center lg:grid-cols-[1fr_.9fr]">
-            <div class="p-6 sm:p-9 lg:p-10">
-              <p class="text-xs font-bold uppercase tracking-[.18em] text-sky-300">City tour &amp; antar jemput</p>
-              <h3 class="mt-3 font-display text-2xl font-bold tracking-tight sm:text-3xl">Jelajahi Bandung bersama driver</h3>
-              <p class="mt-3 max-w-lg text-sm leading-6 text-violet-100/80">Paket wisata ke Bandung Kota, Lembang, Ciwidey, dan Pangalengan. Tersedia antar jemput bandara atau stasiun.</p>
-              <a data-wa="Halo Haura Rental, saya ingin bertanya paket City Tour Bandung 12 jam dan antar jemput bandara/stasiun." href="#" class="mt-6 inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-5 text-sm font-bold text-violet-950 transition hover:bg-violet-100">Tanya Paket Wisata <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-            <img src="./assets/776200387_18109708577322013_1568797857088511438_n.jpg" alt="Paket wisata Bandung dan pilihan armada Haura Rental" class="h-56 w-full object-cover object-center sm:h-72 lg:h-full lg:min-h-[300px]">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -393,11 +423,11 @@
         <div class="reveal mb-8 flex flex-col justify-between gap-4 sm:mb-10 sm:flex-row sm:items-end">
           <div>
             <p class="text-xs font-bold uppercase tracking-[.18em] text-violet-700 dark:text-violet-300">Cerita perjalanan</p>
-            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Ulasan pelanggan</h2>
+            <h2 class="mt-2 font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Ulasan Pelanggan</h2>
           </div>
         </div>
 
-        <div class="carousel-track no-scrollbar gap-4 sm:gap-6 lg:gap-8" data-carousel="reviews" aria-label="Pratinjau ulasan pelanggan">
+        <div class="carousel-track no-scrollbar gap-4 sm:gap-6 lg:gap-8" data-carousel="reviews" aria-label="Ulasan pelanggan">
           <article class="carousel-card reveal stagger-1 rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 sm:p-7">
             <div class="flex items-center justify-between"><span class="flex gap-1 text-amber-400" aria-label="5 dari 5 bintang"><i data-lucide="star" class="h-4 w-4 fill-current" aria-hidden="true"></i><i data-lucide="star" class="h-4 w-4 fill-current" aria-hidden="true"></i><i data-lucide="star" class="h-4 w-4 fill-current" aria-hidden="true"></i><i data-lucide="star" class="h-4 w-4 fill-current" aria-hidden="true"></i><i data-lucide="star" class="h-4 w-4 fill-current" aria-hidden="true"></i></span><i data-lucide="quote" class="h-5 w-5 text-violet-300" aria-hidden="true"></i></div>
             <p class="mt-5 text-sm leading-6 text-slate-700 dark:text-slate-300">“Mobilnya bersih dan wangi saat dijemput. Perjalanan keliling Bandung jadi nyaman.”</p>
@@ -435,8 +465,9 @@
       <div>
         <h2 class="font-display text-sm font-bold tracking-wide text-white">Navigasi cepat</h2>
         <nav class="mt-4 flex flex-col items-start gap-3 text-sm text-violet-100/70" aria-label="Navigasi footer">
+          <a class="transition hover:text-white" href="#layanan">Layanan</a>
+          <a class="transition hover:text-white" href="#armada">Armada</a>
           <a class="transition hover:text-white" href="#keunggulan">Keunggulan</a>
-          <a class="transition hover:text-white" href="#armada">Armada &amp; Tarif</a>
           <a class="transition hover:text-white" href="#ulasan">Ulasan Pelanggan</a>
           <a class="transition hover:text-white" href="https://www.google.com/maps/place//data=!4m2!3m1!19sChIJTfM3OabhaC4RF0tcF7Obvzs" target="_blank" rel="noopener noreferrer">Google Maps</a>
         </nav>
@@ -476,7 +507,7 @@
       });
       document.querySelectorAll("[data-car]").forEach((link) => {
         const car = link.dataset.car;
-        link.href = waBase + encodeURIComponent(`Halo Haura Rental, saya ingin menyewa ${car}. Mohon info ketersediaan dan tarif.`);
+        link.href = waBase + encodeURIComponent(`Halo Haura Rental, saya ingin booking unit ${car}`);
       });
 
       const root = document.documentElement;
@@ -542,26 +573,12 @@
 
       document.querySelectorAll("[data-carousel]").forEach((track) => {
         const name = track.dataset.carousel;
-        const cards = Array.from(track.querySelectorAll(".carousel-card"));
+        const allCards = Array.from(track.querySelectorAll(".carousel-card"));
         const dotsContainer = document.querySelector(`[data-dots="${name}"]`);
-        const state = { track, cards, dotsContainer, visible: false, timer: null, resumeTimer: null, activeIndex: 0 };
+        const state = { track, allCards, cards: allCards, dotsContainer, visible: false, timer: null, resumeTimer: null, activeIndex: 0 };
         carouselStates.push(state);
 
-        if (dotsContainer) {
-          cards.forEach((_, index) => {
-            const dot = document.createElement("button");
-            dot.type = "button";
-            dot.className = "carousel-dot";
-            dot.setAttribute("aria-label", `Tampilkan kartu ${index + 1}`);
-            dot.setAttribute("aria-current", index === 0 ? "true" : "false");
-            dot.addEventListener("click", () => {
-              cards[index].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-              updateDots(state);
-              pauseAndResume(state);
-            });
-            dotsContainer.appendChild(dot);
-          });
-        }
+        renderDots(state);
 
         track.addEventListener("scroll", () => updateDots(state), { passive: true });
         track.addEventListener("touchstart", () => pauseAuto(state), { passive: true });
@@ -575,8 +592,68 @@
         track.addEventListener("pointercancel", () => pauseAndResume(state), { passive: true });
       });
 
+      document.querySelectorAll(".fleet-filter").forEach((button) => {
+        button.addEventListener("click", () => {
+          const category = button.dataset.filter;
+          const fleet = carouselStates.find((state) => state.track.dataset.carousel === "fleet");
+          if (!fleet) return;
+
+          document.querySelectorAll(".fleet-filter").forEach((filterButton) => {
+            const active = filterButton === button;
+            filterButton.setAttribute("aria-pressed", String(active));
+            filterButton.classList.toggle("bg-violet-700", active);
+            filterButton.classList.toggle("text-white", active);
+            filterButton.classList.toggle("border", !active);
+            filterButton.classList.toggle("border-slate-200", !active);
+            filterButton.classList.toggle("bg-white", !active);
+            filterButton.classList.toggle("text-slate-600", !active);
+            filterButton.classList.toggle("font-bold", active);
+            filterButton.classList.toggle("font-semibold", !active);
+            filterButton.classList.toggle("dark:border-slate-700", !active);
+            filterButton.classList.toggle("dark:bg-slate-900", !active);
+            filterButton.classList.toggle("dark:text-slate-300", !active);
+          });
+
+          fleet.allCards.forEach((card) => {
+            card.hidden = category !== "all" && card.dataset.category !== category;
+          });
+          fleet.cards = fleet.allCards.filter((card) => !card.hidden);
+          fleet.activeIndex = 0;
+          fleet.track.scrollLeft = 0;
+          renderDots(fleet);
+          pauseAndResume(fleet);
+        });
+      });
+
+      function renderDots(state) {
+        if (!state.dotsContainer) return;
+        state.dotsContainer.replaceChildren();
+        state.cards.forEach((_, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "carousel-dot";
+          dot.setAttribute("aria-label", `Tampilkan kartu ${index + 1}`);
+          dot.setAttribute("aria-current", index === state.activeIndex ? "true" : "false");
+          dot.addEventListener("click", () => {
+            scrollToCard(state, index);
+            updateDots(state);
+            pauseAndResume(state);
+          });
+          state.dotsContainer.appendChild(dot);
+        });
+      }
+
+      function scrollToCard(state, index) {
+        const card = state.cards[index];
+        if (!card || !isMobile()) return;
+        const cardRect = card.getBoundingClientRect();
+        const trackRect = state.track.getBoundingClientRect();
+        const left = state.track.scrollLeft + cardRect.left - trackRect.left - (state.track.clientWidth - cardRect.width) / 2;
+        state.track.scrollTo({ left, behavior: "smooth" });
+      }
+
       function updateDots(state) {
-        if (!state.dotsContainer || !isMobile()) return;
+        if (!state.dotsContainer || !isMobile() || !state.cards.length) return;
         const trackCenter = state.track.getBoundingClientRect().left + state.track.clientWidth / 2;
         let closestIndex = 0;
         let closestDistance = Infinity;
@@ -603,9 +680,9 @@
         stopAuto(state);
         if (!isMobile() || !state.visible) return;
         state.timer = window.setInterval(() => {
+          if (!state.cards.length) return;
           const next = (state.activeIndex + 1) % state.cards.length;
-          state.cards[next].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-          updateDots(state);
+          scrollToCard(state, next);
         }, 3500);
       }
 
